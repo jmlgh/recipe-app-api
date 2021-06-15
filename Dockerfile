@@ -13,5 +13,6 @@ COPY ./app /app/
 
 # create a user that will only run applications and processes (-D)
 RUN adduser -D user
+# switch to that user so we don't run commands as root
 USER user
 
